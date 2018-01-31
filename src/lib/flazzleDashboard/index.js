@@ -28,7 +28,7 @@ class FlazzleDashboard extends React.Component {
 
     getFormValues() {
         return Object.keys(this.props.flags).reduce((acc, flag) => {
-            return {...acc, ...{[`${flag}`]:this.form[flag].checked}};
+            return { ...acc, ...{ [`${flag}`]: this.form[flag].checked } };
         }, {});
     }
 
@@ -45,17 +45,17 @@ class FlazzleDashboard extends React.Component {
         })
     }
     render() {
-        let {title, flags, goBack} = this.props;
-                return (
+        let { title, flags, goBack } = this.props;
+        return (
             <section style={appSettingsStyles}>
                 <form onChange={this.handleChange} onSubmit={this.handleSubmit} ref={form => this.form = form}>
                     <header style={{ display: "flex", justifyContent: "space-between", padding: "10px", fontSize: "14px", backgroundColor: "rgba(254, 254, 254, 0.9)" }}>
-                        <button type={"submit"} style={{ border: "none", background:"transparent"}}><div style={{width:'19px', height: '19px', cursor: 'pointer'}} title="Save" />Save</button>
-                        <button type={"button"} onClick={goBack} style={{ border: "none", background:"transparent"}} title="Close">Close</button>
+                        <button type={"submit"} style={{ border: "none", background: "transparent" }}><div style={{ width: '19px', height: '19px', cursor: 'pointer' }} title="Save" />Save</button>
+                        <button type={"button"} onClick={goBack} style={{ border: "none", background: "transparent" }} title="Close">Close</button>
                     </header>
                     <section>
                         <h1 style={sectionHeadingStyle}>{title && `${title} - `}Features}</h1>
-                        <section style={{ backgroundColor: "#fff", margin: "10px", display:'flex', flexWrap:'wrap', flexDirection:'rownpm' }}>
+                        <section style={{ backgroundColor: "#fff", margin: "10px", display: 'flex', flexWrap: 'wrap', flexDirection: 'rownpm' }}>
                             {Object.keys(flags).map((flag, i) => <Feature feature={flag} key={i} enabled={flags[flag]} />)}
                         </section>
                     </section>
@@ -65,14 +65,15 @@ class FlazzleDashboard extends React.Component {
     }
 }
 
-const Feature = ({feature, enabled}) => {
-    return(<div style={appSettingStyle}>
-    <span>{unCamelCase(`${feature}`)}</span><input defaultChecked={enabled} type="checkbox" id={`${feature}`} /><label htmlFor={`${feature}`}><span className="ui"></span></label>                
-</div>)}
+const Feature = ({ feature, enabled }) => {
+    return (<div style={appSettingStyle}>
+        <span>{unCamelCase(`${feature}`)}</span><input defaultChecked={enabled} type="checkbox" id={`${feature}`} /><label htmlFor={`${feature}`}><span className="ui"></span></label>
+    </div>)
+}
 
 const unCamelCase = str => str
-        .replace(/([a-z])([A-Z])/g, '$1 $2')
-        .replace(/\b([A-Z]+)([A-Z])([a-z])/, '$1 $2$3')
-        .replace(/^./, str => str.toUpperCase());
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .replace(/\b([A-Z]+)([A-Z])([a-z])/, '$1 $2$3')
+    .replace(/^./, str => str.toUpperCase());
 
 export default FlazzleDashboard;
