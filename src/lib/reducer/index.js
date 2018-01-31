@@ -12,8 +12,6 @@ export const flazzleReducer = flags => (state = flags, action) => {
     }
 }
 
-export const actions = {
+export const flazzleActions = {
     updateFlags: flags => ({type:actionTypes.UPDATE_FLAGS, payload:flags})
 }
-
-export const Flag = ({flag, experimental, stable}) => (flag ? experimental() : !!stable && stable());

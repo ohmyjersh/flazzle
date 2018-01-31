@@ -4,7 +4,7 @@ import {Provider} from 'react-redux';
 import {createStore, combineReducers} from 'redux';
 import {reducer} from './state';
 import flags from './flags';
-import {flazzleReducer} from './flazzle';
+import {flazzleReducer} from '../lib';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
