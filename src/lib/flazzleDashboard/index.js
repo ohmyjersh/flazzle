@@ -12,14 +12,12 @@ const appSettingsStyles = {
 
 const appSettingStyle = { padding: "10px", display: "flex" };
 const sectionHeadingStyle = { padding: "5px 10px" };
-const labelStyle = { marginRight: "10px" };
-const inputStyle = {};
 
 
 class FlazzleDashboard extends React.Component {
 
     constructor(props) {
-        super();
+        super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
             formChanged: false,
@@ -38,6 +36,7 @@ class FlazzleDashboard extends React.Component {
         e.preventDefault();
         let flags = this.getFormValues();
         this.props.updateFlags(flags);
+        this.props.goBack();
     }
 
     handleChange(event) {
@@ -46,7 +45,7 @@ class FlazzleDashboard extends React.Component {
         })
     }
     render() {
-        let {flags, goBack} = this.props;
+        let {title, flags, goBack} = this.props;
                 return (
             <section style={appSettingsStyles}>
                 <form onChange={this.handleChange} onSubmit={this.handleSubmit} ref={form => this.form = form}>
@@ -55,8 +54,8 @@ class FlazzleDashboard extends React.Component {
                         <button type={"button"} onClick={goBack} style={{ border: "none", background:"transparent"}} title="Close">Close</button>
                     </header>
                     <section>
-                        <h1 style={sectionHeadingStyle}>Features</h1>
-                        <section style={{ backgroundColor: "#fff", margin: "10px" }}>
+                        <h1 style={sectionHeadingStyle}>{title && `${title} - `}Features}</h1>
+                        <section style={{ backgroundColor: "#fff", margin: "10px", display:'flex', flexWrap:'wrap', flexDirection:'rownpm' }}>
                             {Object.keys(flags).map((flag, i) => <Feature feature={flag} key={i} enabled={flags[flag]} />)}
                         </section>
                     </section>
