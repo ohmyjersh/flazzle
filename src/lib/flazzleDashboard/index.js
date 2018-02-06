@@ -19,7 +19,7 @@ class FlazzleDashboard extends React.Component {
 
     getFormValues() {
         return Object.keys(this.props.flags).reduce((acc, flag) => {
-            return { ...acc, ...{ [`${flag}`]: this.form[flag].checked } };
+            return { ...acc, ...{ [flag]: this.form[flag].checked } };
         }, {});
     }
 
@@ -41,12 +41,12 @@ class FlazzleDashboard extends React.Component {
             <section className="dashboard">
                 <form onChange={this.handleChange} onSubmit={this.handleSubmit} ref={form => this.form = form}>
                     <header className="dashboardHeader">
-                        <button type={"submit"} style={{ border: "none", background: "transparent" }}><div style={{ width: '19px', height: '19px', cursor: 'pointer' }} title="Save" />Save</button>
-                        <button type={"button"} onClick={goBack} style={{ border: "none", background: "transparent" }} title="Close">Close</button>
+                        <button type={"submit"} title="Save">Save</button>
+                        <button type={"button"} onClick={goBack} title="Close">Close</button>
                     </header>
                     <section>
                         <h1 style={sectionHeadingStyle}>{title && `${title} - `}Features</h1>
-                        <section style={{ backgroundColor: "#fff", margin: "10px", display: 'flex', flexWrap: 'wrap', flexDirection: 'row', alignItems:'center' }}>
+                        <section className="featureList">
                             {Object.keys(flags).map((flag, i) => <Feature feature={flag} key={i} enabled={flags[flag]} />)}
                         </section>
                     </section>

@@ -8,7 +8,7 @@ export default ({flags, state}) => {
         <div>
             <Flag flag={flags.feature1} experimental={() => <Experimental />} stable={() => <Stable content={state.content} />} />
             <br />
-            <Flag flag={flags.featureStuffThings2} experimental={() => <Experimental />} />
+            <Flag flag={flags.feature2} experimental={() => <Experimental />} />
         </div>
         )
 }
