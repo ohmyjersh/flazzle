@@ -1,0 +1,29 @@
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+    border: 1px solid blue;
+}
+
+.item {
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+.stable {
+    background-color: green;
+}
+
+.experimental {
+    background-color: red;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
+import "./main.css";
 
 export default () => {
-    return(<div>experimental</div>)
+    return(<div className="item experimental">experimental</div>)
 }

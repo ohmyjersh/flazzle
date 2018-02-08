@@ -1,5 +1,6 @@
 import React from 'react';
+import "./main.css";
 
 export default props => {
-    return(<div>{props.content || 'Stable'}</div>)
+    return(<div className="item stable">{props.content || 'Stable'}</div>)
 }
