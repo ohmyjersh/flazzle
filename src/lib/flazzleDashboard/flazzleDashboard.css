@@ -30,6 +30,10 @@
 	width: calc(25% - 2em);
 }
 
+.featureHeader {
+	padding: "5px 10px"
+}
+
 .featureList {
 	background-color: #fff;
 	margin: 10px;

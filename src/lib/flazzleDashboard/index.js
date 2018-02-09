@@ -2,9 +2,6 @@ import React from 'react';
 import Feature from './feature';
 import './flazzleDashboard.css';
 
-const sectionHeadingStyle = { padding: "5px 10px" };
-
-
 class FlazzleDashboard extends React.Component {
 
     constructor(props) {
@@ -45,7 +42,7 @@ class FlazzleDashboard extends React.Component {
                         <button type={"button"} onClick={goBack} title="Close">Close</button>
                     </header>
                     <section>
-                        <h1 style={sectionHeadingStyle}>{title && `${title} - `}Features</h1>
+                        <h1 className="featureHeader">{title && `${title} - `}Features</h1>
                         <section className="featureList">
                             {Object.keys(flags).map((flag, i) => <Feature feature={flag} key={i} enabled={flags[flag]} />)}
                         </section>
