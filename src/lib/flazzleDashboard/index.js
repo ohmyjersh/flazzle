@@ -16,7 +16,7 @@ class FlazzleDashboard extends React.Component {
 
     getFormValues() {
         return Object.keys(this.props.flags).reduce((acc, flag) => {
-            return { ...acc, ...{ [flag]: this.form[flag].checked } };
+            return { ...acc, ...{ [flag]: this.form[flag] && this.form[flag].checked } };
         }, {});
     }
 
