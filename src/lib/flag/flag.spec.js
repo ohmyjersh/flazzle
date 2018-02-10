@@ -20,7 +20,7 @@ test('should return stable componet', () => {
     expect(stable.mock.calls.length).toBe(1);
 });
 
-test('should render experimental componet', () => {
+test('should render experimental componet with no stable to fallback on', () => {
     let experimental = jest.fn();
     let wrapper = shallow(<Flag flag={false} enabled={true} experimental={experimental} />);
     expect(experimental.mock.calls.length).toBe(0);
