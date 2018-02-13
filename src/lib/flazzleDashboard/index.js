@@ -38,14 +38,12 @@ class FlazzleDashboard extends React.Component {
             <section className="dashboard">
                 <form onChange={this.handleChange} onSubmit={this.handleSubmit} ref={form => this.form = form}>
                     <header className="dashboardHeader">
-                        <button type={"submit"} title="Save">Save</button>
-                        <button type={"button"} onClick={goBack} title="Close">Close</button>
+                        <button className="headerButton" type={"submit"} title="Save">Save</button>
+                        <span className="featureHeader">{title && `${title} - `}Features</span>
+                        <button className="headerButton" type={"button"} onClick={goBack} title="Close">Close</button>
                     </header>
-                    <section>
-                        <h1 className="featureHeader">{title && `${title} - `}Features</h1>
                         <section className="featureList">
                             {Object.keys(flags).map((flag, i) => <Feature feature={flag} key={i} enabled={flags[flag]} />)}
-                        </section>
                     </section>
                 </form>
             </section>

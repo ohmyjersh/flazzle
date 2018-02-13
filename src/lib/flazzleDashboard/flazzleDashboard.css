@@ -5,20 +5,18 @@
     top: 10px;
     left: 10px;
     right: 10px;
-    background-color: rgba(204, 204, 204, 0.9);
-    height: calc(100vh - 2vh);
+    background-color: rgb(0, 0, 0);
+	border: 10px solid #000;
+	border-radius: 5px;
 }
 
 .dashboardHeader {
 	display: flex; 
 	justify-content: space-between;
-	padding: 10px;
+	padding: 10px 0px;
 	font-size: 14px; 
-	background-color: rgba(254, 254, 254, 0.9);
-}
-.dashboardHeader button {
-	border: none; 
-	background: transparent
+	background-color: rgba(0, 0, 0, 1);
+	align-items: center;
 }
 
 .featureContainer {
@@ -27,81 +25,49 @@
 	flex-direction:row;
 	align-items:center; 
 	padding-right:10px;
-	width: calc(25% - 2em);
+	min-width: calc(25% - 2em);
 }
 
 .featureHeader {
-	padding: "5px 10px"
+	font-size: 28px;
+	color:#ffff;
 }
 
 .featureList {
 	background-color: #fff;
-	margin: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	align-items:center;
+	border-radius: 5px;
 }
 
-.feature {
-	font-size: 20px;
-	padding-right: 10px;
+.headerButton{
+	display:inline-block;
+	padding:0.85em 1.2em;
+	border:0.2em solid #FFFFFF;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	color:#FFFFFF;
+	background:transparent;
+	text-align:center;
+	transition: all 0.2s;
+	font-size: 10px;
+}
+.headerButton:hover{
+	color:#000000;
+	background-color:#FFFFFF;
 }
 
-.checkbox {
-	width: 25px;
-	padding: 0px 0px 10px 0px;
-	position: relative;
+.headerButton:focus {
+	outline:0;
 }
 
-.checkbox label {
-	cursor: pointer;
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: 0;
-  	left: 0;
-	background: #eee;
-	border:1px solid #ddd;
-}
-
-.checkbox label {
-	cursor: pointer;
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: 0;
-  	left: 0;
-	background: #eee;
-	border:1px solid #ddd;
-}
-
-.checkbox label:after {
-	opacity: 0.2;
-	content: '';
-	position: absolute;
-	width: 9px;
-	height: 5px;
-	background: transparent;
-	top: 6px;
-	left: 7px;
-	border: 3px solid #333;
-	border-top: none;
-	border-right: none;
-
-	transform: rotate(-45deg);
-}
-
-/**
- * Create the hover event of the tick
- */
- .checkbox label:hover::after {
-	opacity: 0.5;
-}
-
-/**
- * Create the checkbox state for the tick
- */
-.checkbox input[type=checkbox]:checked + label:after {
-	opacity: 1;
+@media only screen and (max-width: 600) {
+    .featureList {
+		grid-template-columns: repeat(2, 1fr);
+    }
 }

@@ -13,9 +13,7 @@ test('renders correctly', () => {
     const wrapper = mount(<FlazzleDashboard title={"thing stuff"} flags={{}} goBack={backFn} updateFlags={updateFn}  />);
     let saveButton = wrapper.find('button').findWhere(x => x.props().title === 'Save');
     saveButton.simulate('submit');
-    // expect(experimental).toBeCalled();
     expect(updateFn.mock.calls.length).toBe(1);
-    // expect(stable.mock.calls.length).toBe(0);
 });
 
 test('close button does what it should', () => {
