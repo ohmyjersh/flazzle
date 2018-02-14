@@ -35,12 +35,20 @@ ShallowWrapper {
                 className="dashboardHeader"
         >
                 <button
+                        className="headerButton"
                         title="Save"
                         type="submit"
                 >
                         Save
                 </button>
+                <span
+                        className="featureHeader"
+                >
+                        thing stuff - 
+                        Features
+                </span>
                 <button
+                        className="headerButton"
                         onClick={[Function]}
                         title="Close"
                         type="button"
@@ -48,25 +56,17 @@ ShallowWrapper {
                         Close
                 </button>
         </header>
-        <section>
-                <h1
-                        className="featureHeader"
-                >
-                        thing stuff - 
-                        Features
-                </h1>
-                <section
-                        className="featureList"
-                >
-                        <Unknown
-                                enabled={true}
-                                feature="flag"
-                        />
-                        <Unknown
-                                enabled={false}
-                                feature="flag1"
-                        />
-                </section>
+        <section
+                className="featureList"
+        >
+                <Unknown
+                        enabled={true}
+                        feature="flag"
+                />
+                <Unknown
+                        enabled={false}
+                        feature="flag1"
+                />
         </section>
 </form>,
       "className": "dashboard",
@@ -82,12 +82,20 @@ ShallowWrapper {
             className="dashboardHeader"
 >
             <button
+                        className="headerButton"
                         title="Save"
                         type="submit"
             >
                         Save
             </button>
+            <span
+                        className="featureHeader"
+            >
+                        thing stuff - 
+                        Features
+            </span>
             <button
+                        className="headerButton"
                         onClick={[Function]}
                         title="Close"
                         type="button"
@@ -95,25 +103,17 @@ ShallowWrapper {
                         Close
             </button>
 </header>,
-          <section>
-            <h1
-                        className="featureHeader"
-            >
-                        thing stuff - 
-                        Features
-            </h1>
-            <section
-                        className="featureList"
-            >
-                        <Unknown
-                                    enabled={true}
-                                    feature="flag"
-                        />
-                        <Unknown
-                                    enabled={false}
-                                    feature="flag1"
-                        />
-            </section>
+          <section
+            className="featureList"
+>
+            <Unknown
+                        enabled={true}
+                        feature="flag"
+            />
+            <Unknown
+                        enabled={false}
+                        feature="flag1"
+            />
 </section>,
         ],
         "onChange": [Function],
@@ -128,12 +128,20 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <button
+                className="headerButton"
                 title="Save"
                 type="submit"
 >
                 Save
 </button>,
+              <span
+                className="featureHeader"
+>
+                thing stuff - 
+                Features
+</span>,
               <button
+                className="headerButton"
                 onClick={[Function]}
                 title="Close"
                 type="button"
@@ -151,6 +159,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Save",
+                "className": "headerButton",
                 "title": "Save",
                 "type": "submit",
               },
@@ -163,7 +172,26 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "children": Array [
+                  "thing stuff - ",
+                  "Features",
+                ],
+                "className": "featureHeader",
+              },
+              "ref": null,
+              "rendered": Array [
+                "thing stuff - ",
+                "Features",
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
                 "children": "Close",
+                "className": "headerButton",
                 "onClick": [Function],
                 "title": "Close",
                 "type": "button",
@@ -181,91 +209,42 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h1
-                className="featureHeader"
->
-                thing stuff - 
-                Features
-</h1>,
-              <section
-                className="featureList"
->
-                <Unknown
-                                enabled={true}
-                                feature="flag"
-                />
-                <Unknown
-                                enabled={false}
-                                feature="flag1"
-                />
-</section>,
+              <Unknown
+                enabled={true}
+                feature="flag"
+/>,
+              <Unknown
+                enabled={false}
+                feature="flag1"
+/>,
             ],
+            "className": "featureList",
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
+              "key": "0",
+              "nodeType": "function",
               "props": Object {
-                "children": Array [
-                  "thing stuff - ",
-                  "Features",
-                ],
-                "className": "featureHeader",
+                "enabled": true,
+                "feature": "flag",
               },
               "ref": null,
-              "rendered": Array [
-                "thing stuff - ",
-                "Features",
-              ],
-              "type": "h1",
+              "rendered": null,
+              "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
+              "key": "1",
+              "nodeType": "function",
               "props": Object {
-                "children": Array [
-                  <Unknown
-                    enabled={true}
-                    feature="flag"
-/>,
-                  <Unknown
-                    enabled={false}
-                    feature="flag1"
-/>,
-                ],
-                "className": "featureList",
+                "enabled": false,
+                "feature": "flag1",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "0",
-                  "nodeType": "function",
-                  "props": Object {
-                    "enabled": true,
-                    "feature": "flag",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": "1",
-                  "nodeType": "function",
-                  "props": Object {
-                    "enabled": false,
-                    "feature": "flag1",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "section",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "section",
@@ -289,12 +268,20 @@ ShallowWrapper {
                     className="dashboardHeader"
           >
                     <button
+                              className="headerButton"
                               title="Save"
                               type="submit"
                     >
                               Save
                     </button>
+                    <span
+                              className="featureHeader"
+                    >
+                              thing stuff - 
+                              Features
+                    </span>
                     <button
+                              className="headerButton"
                               onClick={[Function]}
                               title="Close"
                               type="button"
@@ -302,25 +289,17 @@ ShallowWrapper {
                               Close
                     </button>
           </header>
-          <section>
-                    <h1
-                              className="featureHeader"
-                    >
-                              thing stuff - 
-                              Features
-                    </h1>
-                    <section
-                              className="featureList"
-                    >
-                              <Unknown
-                                        enabled={true}
-                                        feature="flag"
-                              />
-                              <Unknown
-                                        enabled={false}
-                                        feature="flag1"
-                              />
-                    </section>
+          <section
+                    className="featureList"
+          >
+                    <Unknown
+                              enabled={true}
+                              feature="flag"
+                    />
+                    <Unknown
+                              enabled={false}
+                              feature="flag1"
+                    />
           </section>
 </form>,
         "className": "dashboard",
@@ -336,12 +315,20 @@ ShallowWrapper {
               className="dashboardHeader"
 >
               <button
+                            className="headerButton"
                             title="Save"
                             type="submit"
               >
                             Save
               </button>
+              <span
+                            className="featureHeader"
+              >
+                            thing stuff - 
+                            Features
+              </span>
               <button
+                            className="headerButton"
                             onClick={[Function]}
                             title="Close"
                             type="button"
@@ -349,25 +336,17 @@ ShallowWrapper {
                             Close
               </button>
 </header>,
-            <section>
-              <h1
-                            className="featureHeader"
-              >
-                            thing stuff - 
-                            Features
-              </h1>
-              <section
-                            className="featureList"
-              >
-                            <Unknown
-                                          enabled={true}
-                                          feature="flag"
-                            />
-                            <Unknown
-                                          enabled={false}
-                                          feature="flag1"
-                            />
-              </section>
+            <section
+              className="featureList"
+>
+              <Unknown
+                            enabled={true}
+                            feature="flag"
+              />
+              <Unknown
+                            enabled={false}
+                            feature="flag1"
+              />
 </section>,
           ],
           "onChange": [Function],
@@ -382,12 +361,20 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <button
+                  className="headerButton"
                   title="Save"
                   type="submit"
 >
                   Save
 </button>,
+                <span
+                  className="featureHeader"
+>
+                  thing stuff - 
+                  Features
+</span>,
                 <button
+                  className="headerButton"
                   onClick={[Function]}
                   title="Close"
                   type="button"
@@ -405,6 +392,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Save",
+                  "className": "headerButton",
                   "title": "Save",
                   "type": "submit",
                 },
@@ -417,7 +405,26 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "children": Array [
+                    "thing stuff - ",
+                    "Features",
+                  ],
+                  "className": "featureHeader",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "thing stuff - ",
+                  "Features",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
                   "children": "Close",
+                  "className": "headerButton",
                   "onClick": [Function],
                   "title": "Close",
                   "type": "button",
@@ -435,91 +442,42 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <h1
-                  className="featureHeader"
->
-                  thing stuff - 
-                  Features
-</h1>,
-                <section
-                  className="featureList"
->
-                  <Unknown
-                                    enabled={true}
-                                    feature="flag"
-                  />
-                  <Unknown
-                                    enabled={false}
-                                    feature="flag1"
-                  />
-</section>,
+                <Unknown
+                  enabled={true}
+                  feature="flag"
+/>,
+                <Unknown
+                  enabled={false}
+                  feature="flag1"
+/>,
               ],
+              "className": "featureList",
             },
             "ref": null,
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
-                "nodeType": "host",
+                "key": "0",
+                "nodeType": "function",
                 "props": Object {
-                  "children": Array [
-                    "thing stuff - ",
-                    "Features",
-                  ],
-                  "className": "featureHeader",
+                  "enabled": true,
+                  "feature": "flag",
                 },
                 "ref": null,
-                "rendered": Array [
-                  "thing stuff - ",
-                  "Features",
-                ],
-                "type": "h1",
+                "rendered": null,
+                "type": [Function],
               },
               Object {
                 "instance": null,
-                "key": undefined,
-                "nodeType": "host",
+                "key": "1",
+                "nodeType": "function",
                 "props": Object {
-                  "children": Array [
-                    <Unknown
-                      enabled={true}
-                      feature="flag"
-/>,
-                    <Unknown
-                      enabled={false}
-                      feature="flag1"
-/>,
-                  ],
-                  "className": "featureList",
+                  "enabled": false,
+                  "feature": "flag1",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": "0",
-                    "nodeType": "function",
-                    "props": Object {
-                      "enabled": true,
-                      "feature": "flag",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": "1",
-                    "nodeType": "function",
-                    "props": Object {
-                      "enabled": false,
-                      "feature": "flag1",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                ],
-                "type": "section",
+                "rendered": null,
+                "type": [Function],
               },
             ],
             "type": "section",
