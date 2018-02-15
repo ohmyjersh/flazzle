@@ -1,13 +1,17 @@
 Flazzle 0.1
 
 Install dependencies:
+``` 
 npm install
-
+```
 Build Library:
+```
 npm run build
-
+```
 Run Demo:
+```
 npm run demo
+```
 
 Contributions
 Features, bug fixes and other changes to flazzle are gladly accepted. Please open issues or a pull request with your change.
