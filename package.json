@@ -1,12 +1,11 @@
 {
   "name": "flazzle",
-  "version": "1.0.0",
+  "version": "0.1",
   "description": "Minimalistic feature flag (flipper) library for React + Redux with sweet dashboard",
   "main": "build/index.js",
   "scripts": {
-    "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "demo": "node scripts/demo.js",
+    "demo": "node scripts/demo.js && node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "repository": {
