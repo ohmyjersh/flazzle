@@ -21,11 +21,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <span
-          className="feature"
->
-          Chicken
-</span>,
         <div>
           <div
                     className="checkbox"
@@ -40,23 +35,16 @@ ShallowWrapper {
                     />
           </div>
 </div>,
+        <span
+          className="feature"
+>
+          Chicken
+</span>,
       ],
       "className": "featureContainer",
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Chicken",
-          "className": "feature",
-        },
-        "ref": null,
-        "rendered": "Chicken",
-        "type": "span",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -124,6 +112,18 @@ ShallowWrapper {
         },
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Chicken",
+          "className": "feature",
+        },
+        "ref": null,
+        "rendered": "Chicken",
+        "type": "span",
+      },
     ],
     "type": "div",
   },
@@ -134,11 +134,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <span
-            className="feature"
->
-            Chicken
-</span>,
           <div>
             <div
                         className="checkbox"
@@ -153,23 +148,16 @@ ShallowWrapper {
                         />
             </div>
 </div>,
+          <span
+            className="feature"
+>
+            Chicken
+</span>,
         ],
         "className": "featureContainer",
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Chicken",
-            "className": "feature",
-          },
-          "ref": null,
-          "rendered": "Chicken",
-          "type": "span",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -236,6 +224,18 @@ ShallowWrapper {
             "type": "div",
           },
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Chicken",
+            "className": "feature",
+          },
+          "ref": null,
+          "rendered": "Chicken",
+          "type": "span",
         },
       ],
       "type": "div",

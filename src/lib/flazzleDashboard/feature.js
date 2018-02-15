@@ -3,12 +3,14 @@ import './feature.css';
 
 export default ({ feature, enabled }) => {
     return (<div className="featureContainer">
-        <span className="feature">{unCamelCase(`${feature}`)}</span><div>  	
-            <div className="checkbox">
-                <input defaultChecked={enabled} type="checkbox" id={`${feature}`} />
-                <label htmlFor={`${feature}`}></label></div>
-            </div>
-</div>)
+    <div>
+        <div className="checkbox">
+            <input defaultChecked={enabled} type="checkbox" id={`${feature}`} />
+            <label htmlFor={`${feature}`}></label>
+        </div>
+        </div>
+        <span className="feature">{unCamelCase(`${feature}`)}</span>
+    </div>)
 }
 
 const unCamelCase = str => str
