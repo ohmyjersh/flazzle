@@ -1,4 +1,4 @@
-Flazzle 0.1
+Flazzle 1.0.0
 
 Install dependencies:
 ``` 
