@@ -1,4 +1,5 @@
 Flazzle 1.0.0
+[![Build Status](https://travis-ci.org/ohmyjersh/flazzle.svg?branch=master)](https://travis-ci.org/ohmyjersh/flazzle)
 
 Install dependencies:
 ``` 
