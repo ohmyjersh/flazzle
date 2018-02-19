@@ -1,6 +1,8 @@
 Flazzle 1.0.0
 [![Build Status](https://travis-ci.org/ohmyjersh/flazzle.svg?branch=master)](https://travis-ci.org/ohmyjersh/flazzle)
 
+Minimalistic feature flag (flipper) library for React + Redux with a sweet dashboard
+
 Install dependencies:
 ``` 
 npm install
