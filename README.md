@@ -3,6 +3,8 @@ Flazzle 1.0.0
 
 Minimalistic feature flag (flipper) library for React + Redux with a sweet dashboard
 
+[Demo](https://ohmyjersh.github.io/flazzle/)
+
 Install dependencies:
 ``` 
 npm install
