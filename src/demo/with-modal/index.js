@@ -23,7 +23,7 @@ class App extends React.Component {
   return (
       <div>
         <button onClick={this.toggleModal}>
-          Open the modal
+          Open the modal to show the sweet dashboard
         </button> 
         <Modal show={this.state.isOpen}
           onClose={this.toggleModal}>

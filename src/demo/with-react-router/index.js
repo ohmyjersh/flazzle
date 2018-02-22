@@ -17,7 +17,7 @@ const App = props => {
 }
 
 const Content = props => (<div className="App">
-    <Link to="flazzle"><button>dashboard</button></Link>
+    <Link to="flazzle"><button>click to open the awesome dashboard for feature flags!</button></Link>
     <Main flags={props.flags} state={props.state} />
 </div>);
 
