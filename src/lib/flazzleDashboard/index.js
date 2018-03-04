@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Feature from './feature';
 import './flazzleDashboard.css';
 
@@ -49,6 +50,13 @@ class FlazzleDashboard extends React.Component {
             </section>
         );
     }
+}
+
+FlazzleDashboard.propTypes = {
+    updateFlags: PropTypes.func.isRequired,
+    goBack: PropTypes.func.isRequired,
+    title: PropTypes.string,
+    flags: PropTypes.object.isRequired
 }
 
 export default FlazzleDashboard;

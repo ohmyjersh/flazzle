@@ -1,4 +1,4 @@
-Flazzle 1.0.1
+Flazzle 1.0.2
 
 [![Build Status](https://travis-ci.org/ohmyjersh/flazzle.svg?branch=master)](https://travis-ci.org/ohmyjersh/flazzle)
 

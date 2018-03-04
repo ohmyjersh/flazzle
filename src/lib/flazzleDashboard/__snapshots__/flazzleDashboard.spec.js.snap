@@ -59,11 +59,11 @@ ShallowWrapper {
         <section
                 className="featureList"
         >
-                <Unknown
+                <Feature
                         enabled={true}
                         feature="flag"
                 />
-                <Unknown
+                <Feature
                         enabled={false}
                         feature="flag1"
                 />
@@ -106,11 +106,11 @@ ShallowWrapper {
           <section
             className="featureList"
 >
-            <Unknown
+            <Feature
                         enabled={true}
                         feature="flag"
             />
-            <Unknown
+            <Feature
                         enabled={false}
                         feature="flag1"
             />
@@ -209,11 +209,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Unknown
+              <Feature
                 enabled={true}
                 feature="flag"
 />,
-              <Unknown
+              <Feature
                 enabled={false}
                 feature="flag1"
 />,
@@ -292,11 +292,11 @@ ShallowWrapper {
           <section
                     className="featureList"
           >
-                    <Unknown
+                    <Feature
                               enabled={true}
                               feature="flag"
                     />
-                    <Unknown
+                    <Feature
                               enabled={false}
                               feature="flag1"
                     />
@@ -339,11 +339,11 @@ ShallowWrapper {
             <section
               className="featureList"
 >
-              <Unknown
+              <Feature
                             enabled={true}
                             feature="flag"
               />
-              <Unknown
+              <Feature
                             enabled={false}
                             feature="flag1"
               />
@@ -442,11 +442,11 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Unknown
+                <Feature
                   enabled={true}
                   feature="flag"
 />,
-                <Unknown
+                <Feature
                   enabled={false}
                   feature="flag1"
 />,

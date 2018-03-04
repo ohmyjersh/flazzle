@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './feature.css';
 
-export default ({ feature, enabled }) => {
+const Feature = ({ feature, enabled }) => {
     return (<div className="featureContainer">
     <div>
         <div className="checkbox">
@@ -12,6 +13,13 @@ export default ({ feature, enabled }) => {
         <span className="feature">{unCamelCase(`${feature}`)}</span>
     </div>)
 }
+
+Feature.prototype = {
+    feature: PropTypes.string.isRequired,
+    enabled: PropTypes.bool.isRequired
+}
+
+export default Feature;
 
 const unCamelCase = str => str
     .replace(/([a-z])([A-Z])/g, '$1 $2')
