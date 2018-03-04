@@ -1,4 +1,4 @@
-Flazzle 1.0.3
+Flazzle 1.0.4
 
 [![Build Status](https://travis-ci.org/ohmyjersh/flazzle.svg?branch=master)](https://travis-ci.org/ohmyjersh/flazzle)
 
@@ -39,6 +39,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { flazzleActions, FlazzleDashboard } from 'flazzle';
+import 'flazzle/dist/css/index.css';
 
 export default props => (
       <div>
@@ -58,6 +59,7 @@ function mapDispatchToProps(dispatch) {
 export default connect(mapStateToProps, mapDispatchToProps)(App)
 ```
 *Please checkout the demo project within the src folder to see how this is implemented.*
+*When using the dashboard, import css styles from flazzle/build/css/index.css*
 
 ### 3. Add to components to hide/show features
 

@@ -59,4 +59,8 @@ FlazzleDashboard.propTypes = {
     flags: PropTypes.object.isRequired
 }
 
+FlazzleDashboard.defaultProps = {
+    flags: {}
+}
+
 export default FlazzleDashboard;
