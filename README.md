@@ -1,5 +1,8 @@
 Flazzle 1.0.4
 
+## Demo
+[Flazzle Demo](https://ohmyjersh.github.io/flazzle/)
+
 [![Build Status](https://travis-ci.org/ohmyjersh/flazzle.svg?branch=master)](https://travis-ci.org/ohmyjersh/flazzle)
 
 >Minimalistic feature flag (flipper) library for React + Redux with a sweet dashboard
@@ -79,9 +82,6 @@ export default ({flags}) => {
 ```
 
 **That's all there is to it, start flipping.**
-
-## Demo
-[Flazzle Demo](https://ohmyjersh.github.io/flazzle/)
 
 ## Local Development
 
