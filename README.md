@@ -1,4 +1,4 @@
-Flazzle 1.0.4
+Flazzle 1.1.0
 
 ## Demo
 [Flazzle Demo](https://ohmyjersh.github.io/flazzle/)
