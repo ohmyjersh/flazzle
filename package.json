@@ -7,7 +7,7 @@
     "build": "node scripts/build.js",
     "demo": "node scripts/demo.js && node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom",
-    "release" : "npm run build && npm publish"
+    "release": "npm run build && npm publish"
   },
   "keywords": [
     "react",
@@ -28,8 +28,7 @@
   },
   "homepage": "https://github.com/ohmyjersh/flazzle#readme",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "prop-types": "^15.6.1",
     "autoprefixer": "7.1.6",
